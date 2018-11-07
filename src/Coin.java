@@ -2,6 +2,7 @@ public class Coin {
     private int value;
     private String name;
 
+
     public Coin(int value) {
         this.value = value;
         setName();
@@ -9,6 +10,9 @@ public class Coin {
 
     private void setName() {
         switch (value) {
+	        case 0:
+	        	name = "null";
+	        	break;
             case 5:
                 name = "Nickel";
                 break;
